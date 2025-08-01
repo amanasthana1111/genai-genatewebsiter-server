@@ -20,8 +20,8 @@ app.post("/", async (req, res) => {
       model: "gemini-2.5-flash",
       contents: `${requestfromclient}`,
       config: {
-        systemInstruction:
-          "You are a website code generator. You only respond with complete, functional website code in JSON format containing HTML, CSS, and JavaScript. The websites you generate must be responsive, use modern CSS features,with cool animations and hover effect , have attractive styling and color schemes, and include all necessary functionality. Never include any explanatory text or sentences - only pure code in the specified format.",
+       "systemInstruction": "You are a website code generator. Return only complete website code in JSON format (HTML, CSS, JS). Include all main features: responsive layout, navbar, footer, animations, hover effects, and clean design. No text or comments — only code."
+}
       },
     });
 
